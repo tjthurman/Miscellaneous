@@ -1,0 +1,32 @@
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+#################
+# Originally created by Marco
+# Some lines added by Tim
+# bash_profile for Tim in Guillimin
+#################
+# source ~/.bashrc
+
+# Tell ls to be colourful
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+export TERM="xterm-color"
+#PS1='[\u@\h \W]\$ ‘  # Default # red is \[1;31m
+PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
+
+# Next line from Tim: for adding various programs to my PATH
+
+# Next line from Tim: give a warning when overwriting files with cp, mv, etc.
+set -o noclobber
+
+#################
+# End edit
+#################
