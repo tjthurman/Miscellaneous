@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#SBATCH -n 32                 # number of CPUs/cores you request. Unless you're doing an MPI job, can't be more than 32
+# SBATCH --ntasks=1 # For programs that aren't running with MPI parallelization
+# SBATCH --cpus-per-task=32 # the number of cores to use. If a serial job, do 1. Max is 32, and that only works if the program you're working with can handle within-computer parallelization.
+#SBATCH --mem=512000M # total memory to ask for. This value corresponds to the Bigmem500 nodes.
 #SBATCH --time=0-00:05        # time (DD-HH:MM)
 #SBATCH --mem-per-cpu=4G      # Memory per CPU. Not sure if we'll need this. Base compute nodes on cedar have 4GB per CPU.
 #SBATCH --account=def-barrett # Account of barrett lab project (more data and priority)
