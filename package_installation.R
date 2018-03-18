@@ -62,6 +62,7 @@ install.packages("MCMCglmm")
 install.packages("knitr")
 install.packages("kableExtra")
 install.packages("tinytex")
+install.packages("png")
 
 
 # Plotting --------------------------------------------------------------------
