@@ -20,7 +20,8 @@ install.packages("car")
 install.packages("vegan")
 install.packages("FactoMineR")
 install.packages("mvoutlier")
-
+install.packages("distr")
+install.packages("extraDistr")
 
 # Genetic analysis --------------------------------------------------------
 install.packages("HardyWeinberg")
