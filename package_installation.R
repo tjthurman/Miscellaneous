@@ -22,6 +22,7 @@ install.packages("FactoMineR")
 install.packages("mvoutlier")
 install.packages("distr")
 install.packages("extraDistr")
+install.packages("factoextra") 
 
 # Genetic analysis --------------------------------------------------------
 install.packages("HardyWeinberg")
